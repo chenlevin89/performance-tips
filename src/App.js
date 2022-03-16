@@ -1,23 +1,18 @@
-import logo from './logo.svg';
+import {lazy, Suspense} from 'react'
 import './App.css';
+
+const AccordionList = lazy(() => import('./features/accordion-list/AccordionList'))
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <h1>Performance Tips</h1>
+
+      <Suspense fallback={null}>
+        <AccordionList />
+      </Suspense>
+
     </div>
   );
 }

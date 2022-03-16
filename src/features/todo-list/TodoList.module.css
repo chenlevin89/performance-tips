@@ -1,0 +1,22 @@
+.TodoContainer{
+    width: 400px;
+    margin: auto;
+}
+
+.TodoHeader{
+    display: flex;
+    justify-content: space-between;
+}
+
+.TodoList{
+    height: 200px;
+    overflow-y: auto;
+}
+
+.TodoItem {
+    display: flex;
+}
+
+.Id{
+    margin-right: 15px;
+}

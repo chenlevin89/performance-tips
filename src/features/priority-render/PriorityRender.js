@@ -21,9 +21,15 @@ export default function PriorityRender() {
 
     return <div ref={containerElement}>
         <p>Priority Render</p>
+
         {index > 2 && <Fibonacci index={38} />}
         {index > 0 && <p>First</p>}
         {index > 1 && <p>Second</p>}
+
+        {/* <Fibonacci index={38} />
+        <p>First</p>
+        <p>Second</p> */}
+
     </div>
 }
 
